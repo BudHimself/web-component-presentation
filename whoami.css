@@ -1,0 +1,27 @@
+body {
+    height: 100%;
+}
+
+.text-content {
+    color: white;
+    font-size: 30px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 50px 0 50px;
+}
+
+.img {
+    position: relative;
+}
+
+.portrait {
+    position: absolute;
+    right: 230px;
+    top: 120px;
+    width: 80px;
+}

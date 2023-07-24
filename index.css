@@ -1,0 +1,41 @@
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: deepskyblue;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+a:last-of-type {
+    margin-right: 30px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.vertical-separator {
+    width: 2px;
+    height: 20px;
+    background-color: black;
+    margin: 0 5px 0 5px;
+}
+
+.bg-red {
+    background-color: red;
+    color: white;
+    font-size: 20px;
+}
+
+.bg-blue {
+    background-color: blue
+}
