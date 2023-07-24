@@ -21,18 +21,6 @@
     width: 100px;
 }
 
-.saber {
-    position: absolute;
-    bottom: 270px;
-    height: 0;
-    transition: height 1s linear;
-    width: 2px;
-}
-
-.saber-open {
-    height: 300px;
-}
-
 #saber-angular {
     background-color: red;
     box-shadow: 0 0 5px 5px #f00;
