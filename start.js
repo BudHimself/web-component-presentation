@@ -5,7 +5,7 @@ document.addEventListener('click', (event) => {
         const music = new Audio('Star Wars Theme Song By John Williams.mp3')
 
         music.play()
-        music.volume = 0.20
+        music.volume = 0.05
     } else {
         window.location = event.target.href
     }
