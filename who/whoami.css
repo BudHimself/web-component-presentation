@@ -14,11 +14,13 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+    font-size: 30px;
 }
 
 .title > img {
-    width: 100px;
+    width: 200px;
+    padding-right: 10px;
 }
 
 .text-content {

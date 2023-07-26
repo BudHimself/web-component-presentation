@@ -1,7 +1,7 @@
 class Saber extends HTMLElement {
     constructor() {
         super();
-        const shadow = this.attachShadow({mode: "open"})
+        const shadow = this.attachShadow({mode: "closed"})
         const opponentName = this.getAttribute("opponent-name")
 
         const template = document.querySelector("#saber")
@@ -68,26 +68,18 @@ class Saber extends HTMLElement {
             }
             
             .opponent-img {
-                width: 300px;
+                width: 200px;
+                background-color: white;
             }
             
             .opponent-saber {
                 width: 100px;
+                padding-bottom: 5px;
             }
             
-            #saber-angular {
-                background-color: red;
-                box-shadow: 0 0 5px 5px #f00;
-            }
-            
-            #saber-react {
-                background-color: deepskyblue;
-                box-shadow: 0 0 5px 5px #00bfff;
-            }
-            
-            #saber-vue {
-                background-color: seagreen;
-                box-shadow: 0 0 5px 5px #2e8b57;
+            #saber-hero {
+                background-color: lawngreen;
+                box-shadow: 0 0 5px 5px #7cfc00;
             }
         `
 

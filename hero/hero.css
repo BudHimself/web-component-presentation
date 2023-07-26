@@ -1,7 +1,7 @@
 .opponents {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
     padding-top: 50px;
 }
@@ -15,33 +15,12 @@
 }
 
 .opponent-img {
-    width: 200px;
-}
-
-my-saber > div > img.opponent-img {
     background-color: white;
+    width: 300px;
 }
 
 .opponent-saber {
     width: 100px;
-}
-
-.opponent-btn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.saber-light {
-    position: absolute;
-    bottom: 300px;
-    height: 0;
-    transition: height 1s linear;
-    width: 2px;
-}
-
-.saber-open {
-    height: 300px;
 }
 
 #saber-angular {

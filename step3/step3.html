@@ -6,16 +6,38 @@
   <link rel="stylesheet" type="text/css" href="../utils/star.css">
   <link rel="stylesheet" type="text/css" href="step3.css">
   <script defer src="../utils/star.js"></script>
+  <script defer src="../step2/step2.js"></script>
   <script defer src="../components/saberShadow.js"></script>
-<!--  <script defer src="../lol.js"></script>-->
 </head>
 <body>
 <a href="../demo.html">Sommaire</a>
 <a href="../shadowGraph/shadowGraph.html">Suite</a>
 <div class="opponents">
-  <my-saber opponent-name="angular" ></my-saber>
-  <my-saber opponent-name="react" ></my-saber>
-  <my-saber opponent-name="vue" ></my-saber>
+  <div class="opponent-btn">
+    <div class="opponent">
+      <img class="opponent-img" src="../img/angular.png"/>
+      <img class="opponent-saber" src="../img/light-saber.png" />
+      <div class="saber-light" id="saber-angular"></div>
+    </div>
+    <button onclick="angularForce()">Force</button>
+  </div>
+  <div class="opponent-btn">
+    <div class="opponent">
+      <img class="opponent-img" src="../img/react.png"/>
+      <img class="opponent-saber" src="../img/light-saber.png" />
+      <div class="saber-light" id="saber-react"></div>
+    </div>
+    <button onclick="reactForce()">Force</button>
+  </div>
+  <div class="opponent-btn">
+    <div class="opponent">
+      <img class="opponent-img" src="../img/vue.png"/>
+      <img class="opponent-saber" src="../img/light-saber.png" />
+      <div class="saber-light" id="saber-vue"></div>
+    </div>
+    <button onclick="vueForce()">Force</button>
+  </div>
+  <my-saber opponent-name="hero" ></my-saber>
 </div>
 <template id="saber">
   <div class="opponent">
