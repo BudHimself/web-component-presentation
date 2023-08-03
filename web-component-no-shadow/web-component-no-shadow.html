@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Wars</title>
+  <link rel="stylesheet" type="text/css" href="../utils/star.css">
+  <link rel="stylesheet" type="text/css" href="web-component-no-shadow.css">
+  <script defer src="../utils/star.js"></script>
+  <script defer src="web-component-no-shadow.js"></script>
+  <script defer src="../components/saber.js"></script>
+</head>
+<body>
+<a href="../index.html">Sommaire</a>
+<a href="../first-end/first-end.html">Suite</a>
+<div class="opponents">
+<div class="opponent-btn">
+  <div class="opponent">
+    <img class="opponent-img" src="../img/angular.png"/>
+    <img class="opponent-saber" src="../img/light-saber.png" />
+    <div class="saber-light" id="saber-angular"></div>
+  </div>
+  <button onclick="angularForce()">Force</button>
+</div>
+<div class="opponent-btn">
+  <div class="opponent">
+    <img class="opponent-img" src="../img/react.png"/>
+    <img class="opponent-saber" src="../img/light-saber.png" />
+    <div class="saber-light" id="saber-react"></div>
+  </div>
+  <button onclick="reactForce()">Force</button>
+</div>
+<div class="opponent-btn">
+  <div class="opponent">
+    <img class="opponent-img" src="../img/vue.png"/>
+    <img class="opponent-saber" src="../img/light-saber.png" />
+    <div class="saber-light" id="saber-vue"></div>
+  </div>
+  <button onclick="vueForce()">Force</button>
+</div>
+  <my-saber opponent-name="hero" ></my-saber>
+</div>
+<template id="saber">
+  <div class="opponent">
+    <img class="opponent-img" src=""/>
+    <img class="opponent-saber" src="../img/light-saber.png" />
+  </div>
+</template>
+</body>
+</html>

@@ -1,0 +1,49 @@
+body {
+    height: 100%;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    font-size: 30px;
+}
+
+.title > img {
+    width: 200px;
+    padding-right: 10px;
+}
+
+.text-content {
+    color: white;
+    font-size: 30px;
+    padding-right: 100px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 50px 0 50px;
+}
+
+.img {
+    position: relative;
+}
+
+.portrait {
+    position: absolute;
+    right: 230px;
+    top: 120px;
+    width: 80px;
+}

@@ -1,0 +1,12 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 800px;
+    background-color: gray;
+}
+
+img {
+    width: 1300px;
+}

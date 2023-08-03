@@ -1,0 +1,43 @@
+.opponents {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.opponent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 700px;
+}
+
+.opponent-img {
+    background-color: white;
+    width: 300px;
+}
+
+.opponent-saber {
+    width: 100px;
+}
+
+#saber-angular {
+    background-color: red;
+    box-shadow: 0 0 5px 5px #f00;
+}
+
+#saber-react {
+    background-color: deepskyblue;
+    box-shadow: 0 0 5px 5px #00bfff;
+}
+
+#saber-vue {
+    background-color: seagreen;
+    box-shadow: 0 0 5px 5px #2e8b57;
+}
+#saber-hero {
+    background-color: lawngreen;
+    box-shadow: 0 0 5px 5px #7cfc00;
+}

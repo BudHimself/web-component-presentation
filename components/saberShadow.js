@@ -1,6 +1,7 @@
 class Saber extends HTMLElement {
     constructor() {
         super();
+        const shadow = this.attachShadow({mode: "closed"})
         const opponentName = this.getAttribute("opponent-name")
 
         const template = document.querySelector("#saber")
@@ -16,13 +17,13 @@ class Saber extends HTMLElement {
 
         const style = this.getStyle()
 
-        this.appendChild(templateContent)
-        this.appendChild(style)
-        this.addOpeningEvent()
+        shadow.appendChild(templateContent)
+        shadow.appendChild(style)
+        this.addOpeningEvent(shadow)
     }
 
-    addOpeningEvent() {
-        this.addEventListener('click', (event) => {
+    addOpeningEvent(shadow) {
+        shadow.addEventListener('click', (event) => {
             const open = "saber-open"
             const parent = event.target.parentNode
             const elem = parent.querySelector(".saber-light")
@@ -56,6 +57,29 @@ class Saber extends HTMLElement {
             
             .saber-open {
                 height: 300px;
+            }
+            
+            .opponent {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                height: 700px;
+            }
+            
+            .opponent-img {
+                width: 200px;
+                background-color: white;
+            }
+            
+            .opponent-saber {
+                width: 100px;
+                padding-bottom: 5px;
+            }
+            
+            #saber-hero {
+                background-color: lawngreen;
+                box-shadow: 0 0 5px 5px #7cfc00;
             }
         `
 

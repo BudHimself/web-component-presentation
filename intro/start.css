@@ -101,7 +101,7 @@ p {
 
 /* Set the scrolling animation and position it */
 #content {
-    animation: scroll 100s linear 16s;
+    animation: scroll 100s linear 10s;
     position: absolute;
     top: 100%;
 }

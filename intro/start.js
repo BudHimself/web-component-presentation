@@ -1,4 +1,6 @@
-document.addEventListener('click', (event) => {
+const btn = document.querySelector("button")
+
+btn.addEventListener('click', (event) => {
     event.preventDefault()
 
     if (event.target.tagName !== 'A') {
